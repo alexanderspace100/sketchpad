@@ -1,0 +1,26 @@
+body {
+	background-color: #e7eaf1;
+}
+
+h2 {
+	margin-top: 15px;
+	text-align: center;
+}
+
+
+#container {
+  border: 7px solid black;
+  width: 800px;
+  height: 500px;
+  background-color:white;
+  /*float:left;*/
+  margin: auto;
+  box-shadow: 11px 9px 5px 0px rgba(0,0,0,0.75);
+}
+
+.grid-square {
+	float:left;
+	opacity: 1;
+	background-color: white;
+	border: 1px solid transparent;
+}
