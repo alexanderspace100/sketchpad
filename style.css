@@ -2,18 +2,35 @@ body {
 	background-color: #e7eaf1;
 }
 
+#main {
+	width: 1000px;
+	margin: 0px auto;
+}
+
 h2 {
 	margin-top: 15px;
 	text-align: center;
 }
 
+#top {
+	text-align:center;
+}
+
+button {
+	float:inline-block;
+	margin-bottom: 5px;
+}
+
+#clear-grid {
+	margin-left:35px;
+}
 
 #container {
   border: 7px solid black;
-  width: 800px;
-  height: 500px;
+  width: 550px;
+  height: 550px;
   background-color:white;
-  /*float:left;*/
+  /*float:right;*/
   margin: auto;
   box-shadow: 11px 9px 5px 0px rgba(0,0,0,0.75);
 }

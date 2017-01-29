@@ -3,13 +3,23 @@
   <head>
     <meta charset="utf-8">
     <link href="style.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <title>Another sketchpad</title>
   </head>
-  <body>
-    <h2>Your sketchpad</h2>
-      <div id = "container"></div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="sketch.js"></script>
+  <body>
+    <div id = "main">
+      <div id = "top">
+        <h2>Your sketchpad</h2>
+
+        <button id="clear-grid">Clear sketch</button>
+        <button id="resize">Resize sketch</button>
+        <button id="borderbutton">Grid: Off</button>
+      </div>
+
+        <div id = "container"></div>
+    </div>
+
+    <script type="text/javascript" src="sketch.js"></script>
   </body>
 </html>
