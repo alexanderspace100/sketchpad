@@ -1,11 +1,11 @@
 var gridSize = 64;
 var squareSize = 550/gridSize;
 var isBorder = false;
-var ourColor = "orange";
-var colorSetting = "";
+var penColor = "pink";
 
 $(document).ready(function() {
   startGrid();
+  effects();
 });
 
 function startGrid() {
@@ -24,16 +24,12 @@ function startGrid() {
   }
 }
 
-// add mouse hover effect
-// $(".grid-square").mouseenter(function(){
-  // if(colorSetting === "random") {
-  //   ourColor = '#'+Math.random().toString(16).substr(2,6);
-  //   $(this).css("opacity","1");
-  // } else {
-  //   $(this).css("opacity","1");
-  // }
-  // $(this).css("background-color", ourColor);
-  // });
+//mouse effects
+function effects() {
+$("div.grid-square").hover(function(){
+  $(this).css("background-color",penColor);
+});
+}
 
 // Reset Button
 $("#clear-grid").click(function(){
@@ -55,4 +51,12 @@ $("#borderbutton").click(function(){
 		isBorder = true;
 		$("button#borderbutton").html("Grid: On");
 	}
+});
+
+// Resize Button
+$("#resize").click(function(){
+	$(".grid-square").remove();
+ 	gridSize = parseInt(prompt("Choose a pixel density. e.g 100 = 100x100 pixels dense. Go too high and the script may stop running!", "100"));
+ 	squareSize = 800/gridSize;
+ 	gridStart();
 });
