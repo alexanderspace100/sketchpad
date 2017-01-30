@@ -1,5 +1,9 @@
-body {
-	background-color: #e7eaf1;
+html {
+  background: url(images/bear.jpg) no-repeat fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #main {
