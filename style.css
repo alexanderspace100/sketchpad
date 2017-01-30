@@ -13,7 +13,7 @@ html {
 
 h2 {
 	width: 500px;
-	background-color: #777;
+	background-color: #F3CA00;
 	margin: 10px auto;
 	border-radius: 10px;
 	padding: 10px;
@@ -45,17 +45,14 @@ button {
 	font-size: 1.5em;
 	margin: 0 25px 10px;
 	padding: 3px 10px;
-	background-color: #FFF;
+	background-color: #F3CA00;
 	color: #777;
 	border: 1px solid #777;
 	border-radius: 12px;
-	-webkit-transition-duration: 0.3s;
-	transition-duration: 0.3s;
 }
 
 button:hover {
-	background-color: #777; //TODO
-	color: #FFF; //TODO
+	background-color: #FFE4E1;
 }
 
 #clear-grid {
@@ -63,11 +60,11 @@ button:hover {
 }
 
 #container {
-  border: 7px solid #777;
+  border: 20px solid #F3CA00;
+	border-radius:10%;
   width: 550px;
   height: 550px;
-  background-color:white;
-  /*float:right;*/
+  background-color: white;
   margin: auto;
   box-shadow: 11px 9px 5px 0px rgba(0,0,0,0.75);
 }
@@ -90,12 +87,12 @@ button:hover {
 	margin: 5px;
 }
 
-.pink {
-	background-color: pink;
+.red {
+	background-color: #D9452A;
 }
 
 .blue {
-	background-color: #aae6f7;
+	background-color: #6495ED;
 }
 
 .yellow {
@@ -103,5 +100,5 @@ button:hover {
 }
 
 .purple {
-	background-color: #c4a5ff;
+	background-color: #BA55D3;
 }
