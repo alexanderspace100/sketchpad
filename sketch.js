@@ -55,7 +55,7 @@ $(document).ready(function() {
   			$("button#borderbutton").html("Grid: Off");
   	// Otherwise if border is false(off), we turn it on and put a border on all grid-squares.
   	} else {
-  		$(".grid-square").css("border-color", "#4286f4");
+  		$(".grid-square").css("border-color", "#c8c8c8");
   		isBorder = true;
   		$("button#borderbutton").html("Grid: On");
   	}

@@ -8,7 +8,25 @@ body {
 }
 
 h2 {
-	margin-top: 15px;
+	width: 500px;
+	background-color: #777;
+	margin: 10px auto;
+	border-radius: 10px;
+	padding: 10px;
+	color: #FFF;
+	font-size: 2em;
+	font-family: 'Amatic SC', cursive;
+	text-align: center;
+}
+
+p {
+	width: 500px;
+	margin: 10px auto;
+	padding: 10px;
+	color: #777;
+	font-size: 1.5em;
+	font-family: 'Amatic SC', cursive;
+	text-align: center;
 }
 
 #top {
@@ -16,8 +34,24 @@ h2 {
 }
 
 button {
-	float:inline-block;
-	margin-bottom: 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-family: 'Amatic SC', cursive;
+	font-size: 1.5em;
+	margin: 0 25px 10px;
+	padding: 3px 10px;
+	background-color: #FFF;
+	color: #777;
+	border: 1px solid #777;
+	border-radius: 12px;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+
+button:hover {
+	background-color: #777; //TODO
+	color: #FFF; //TODO
 }
 
 #clear-grid {
@@ -25,7 +59,7 @@ button {
 }
 
 #container {
-  border: 7px solid black;
+  border: 7px solid #777;
   width: 550px;
   height: 550px;
   background-color:white;
@@ -38,7 +72,7 @@ button {
 	float:left;
 	opacity: 1;
 	background-color: white;
-	border: 1px solid transparent;
+	border: 1px dotted transparent;
 }
 
 #right {
