@@ -1,5 +1,8 @@
 html {
-  background: url(images/bear.jpg) no-repeat fixed;
+  background: url(images/bear.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
