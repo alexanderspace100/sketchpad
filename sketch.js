@@ -4,7 +4,11 @@ var isBorder = false;
 var penColor = "pink";
 
 $(document).ready(function() {
+  startGrid();
+  mouseEffects();
+
   // create the rows
+  function startGrid(){
     for(i=0; i<gridSize*gridSize; i++) {
       $("#container").append("<div class='grid-square'></div>")
     }
@@ -17,11 +21,14 @@ $(document).ready(function() {
     if(isBorder) {
       $(".grid-square").css("border-color", "#4286f4");
     }
+  }
 
   //mouse effects
-  $("div.grid-square").hover(function(){
-    $(this).css("background-color",penColor);
-  });
+  function mouseEffects() {
+    $("div.grid-square").hover(function(){
+      $(this).css("background-color",penColor);
+    });
+  }
 
 
 	$('div.colorPick').click(function() {
@@ -43,6 +50,7 @@ $(document).ready(function() {
   $("#clear-grid").click(function(){
     	$(".grid-square").remove();
     	startGrid();
+      mouseEffects();
   });
 
   // Grid Toggle Button
